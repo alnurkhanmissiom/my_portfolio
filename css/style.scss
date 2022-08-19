@@ -414,6 +414,97 @@ section {
     }
 }
 
+.contact {
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 2rem;
+        .info-container {
+            width: 40rem;
+            h1 {
+                font-size: 3rem;
+                text-transform: uppercase;
+                color: $white;
+                padding-bottom: 1rem;
+            }
+            p {
+                font-size: 1.5rem;
+                line-height: 2;
+                color: $light-colour;
+                padding: 1rem 0;
+            }
+            .box-container {
+                padding: 1rem;
+                .box {
+                    display: flex;
+                    gap: 2rem;
+                    padding: 1rem 0;
+                    i {
+                        font-size: 3rem;
+                        color: $crimson;
+                        padding-top: .5rem;
+                    }
+                    h3 {
+                        font-size: 2rem;
+                        color: $white;
+                    }
+                }
+            }
+            .share {
+                a {
+                    font-size: 2rem;
+                    height: 4.5rem;
+                    width: 4.5rem;
+                    line-height: 4.5rem;
+                    border-radius: 50%;
+                    background: $light-bg;
+                    color: $white;
+                    margin-right: .3rem;
+                    text-align: center;
+                    &:hover {
+                        background: $crimson;
+                    }
+                }
+            }
+        }
+        form {
+            flex: 1 1 42rem;
+            .inputBox {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                input {
+                    width: 49%;
+                }
+            }
+            .inputBox input,
+            textarea {
+                border-radius: 5rem;
+                padding: 1.2rem 1.8rem;
+                font-size: 1.6rem;
+                color: $white;
+                text-transform: none;
+                margin: 0.7rem 0;
+                background: $light-bg;
+            }
+            textarea {
+                width: 100%;
+                border-radius: 1rem;
+                resize: none;
+                height: 25rem;
+            }
+            .button {
+                padding: 1rem 3rem;
+                &:hover {
+                    background: $white;
+                    color: $black;
+                }
+            }
+        }
+    }
+}
+
 // media queries
 @media (max-width:1200px) {
     html {
@@ -456,6 +547,9 @@ section {
                 font-size: 2.5;
             }
         }
+    }
+    .contact .row form .inputBox input {
+        width: 100%;
     }
 }
 
